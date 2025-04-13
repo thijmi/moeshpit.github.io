@@ -1,0 +1,147 @@
+:root {
+  --text-color: white;
+  --sparkles-color: gold;
+  --heart-color: red;
+  --time-color: gold;
+  --transition-time: 0.7s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: black;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+.content {
+  padding: 10px 0 0 10px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: var(--text-color);
+  transition: text-shadow var(--transition-time) ease, font-weight ease;
+}
+
+p:hover,
+.toggle-button:hover {
+  font-weight: bold;
+  text-shadow: 0 0 5px currentColor;
+}
+
+.sparkles {
+  color: var(--sparkles-color);
+}
+
+.heart {
+  color: var(--heart-color);
+}
+
+.time {
+  color: var(--time-color);
+}
+
+.sparkles:hover,
+.heart:hover,
+.time:hover {
+  text-shadow: 0 0 5px currentColor;
+}
+
+.social-icons {
+  display: flex;
+  gap: 3px;
+  padding: 0 0 0 10px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 20px;
+  transition: text-shadow var(--transition-time), font-weight var(--transition-time), color var(--transition-time);
+}
+
+.social-icon:hover {
+  font-weight: bold;
+  color: var(--glow-color, white);
+  text-shadow: 0 0 8px var(--glow-color, white);
+}
+
+.social-icon.twitter  { --glow-color: #1da1f2; }
+.social-icon.discord  { --glow-color: #99a9e4; }
+.social-icon.spotify  { --glow-color: #1db954; }
+.social-icon.github   { --glow-color: #a78ad3; }
+.social-icon.twitch   { --glow-color: #b17dff; }
+.social-icon.steam    { --glow-color: #5e748f; }
+
+.text-button {
+  padding-left: 10px;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: text-shadow var(--transition-time) ease, font-weight ease;
+}
+
+.text-button:hover {
+  font-weight: bold;
+  text-shadow: 0 0 5px currentColor;
+}
+
+#songs-container,
+#components-container {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.song-line,
+.components-line {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#show-songs-btn,
+#show-components-btn {
+  padding: 0 0 0 10px;
+  font-family: Arial;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#show-songs-btn:hover,
+#show-components-btn:hover {
+  padding: 0 0 0 10px;
+  color: #ffffff;
+  font-family: Arial;
+  text-shadow: 0 0 5px #ffffff;
+  font-weight: bold;
+  transition: text-shadow var(--transition-time) ease, font-weight ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}

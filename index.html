@@ -1,57 +1,82 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/site.css" />
+    <title>moe</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <title>moe</title>
-    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA3JDoAN+n6ADru/IA6cLwAMNt0QDlr+0AtFvCAPve/wDotvAA+Mn/APbZ+gDtqPcA9L38AM592wAAAAAAAAAAAAEQAAAAIgAAEdEAAAEREAzMzREAER0RCqyM0QDKu9GsqMwRAMu6EcytwQAACsrMxRUQDdAACqERURHd0QRmEVfsHK0VRELMEVyhzMWWKTEczuwcwWJGOhyhHgIgS0YAyqoRAAAGYADIrNEAAAAAAKrBEAAAAAAACh0QAAD/nwAAzw8AAIYDAAACAwAAAAMAAAAPAACAGQAA4AAAAIAAAAAAAAAAAAAAAAAJAAAMDwAAnA8AAPwfAAD+HwAA" rel="icon" type="image/x-icon">    
+    <script src="scripts.js" defer></script>
   </head>
   <body>
-    <div>
-      <p>welcome to</p>
-      <span class="highlight">moe's</span>
-      <p>web corner</p> 
-      <p> </p>
-      <div class="social-icons">
-        <a href="https://x.com/moeshers" target="_blank">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="https://discord.gg/sbAhUXXbMb" target="_blank">
-          <i class="fa-brands fa-discord"></i>
-        </a>
-        <a href="https://github.com/moeshpit" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://youtube.com/@moeshpit" target="_blank">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://twitch.tv/moeshpits" target="_blank">
-          <i class="fa-brands fa-twitch"></i>
-        </a>
-        <a href="https://www.patreon.com/moeshpit" target="_blank">
-          <i class="fa-brands fa-patreon"></i>
-        </a>
-        <a href="https://bsky.app/profile/moe.christmas" target="_blank">
-          <i class="fa-brands fa-bluesky"></i>
-        </a>
-        <a href="https://open.spotify.com/user/31mktjvca7mz2zhzj3zlxcgbeqde" target="_blank">
-          <i class="fa-brands fa-spotify"></i>
-        </a>
-      </div>
-      <p>&nbsp;</p>
-      <button class="toggle-button" onclick="togglePlaylist()">♫ click to show playlist ♫</button>
-      <ul id="song-list"></ul>
-      <button class="back-to-top" onclick="scrollToTop()">back to top</button>
+    <div class="content">
+      <p>
+        welcome to this web page <span class="heart">❤️</span>
+      </p>
+      <br />
+      <p>find me here:</p>
     </div>
-    <script src="js/scripts.js"></script>
+
+    <div class="social-icons">
+      <a
+        href="https://www.twitch.tv/thijmi"
+        class="social-icon twitch"
+        aria-label="Twitch"
+      >
+        <i class="fa-brands fa-twitch"></i>
+      </a>
+      <a
+        href="https://x.com/memoiredemort"
+        class="social-icon twitter"
+        aria-label="Twitter"
+      >
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a
+        href="https://open.spotify.com/user/31qguy3p3djkxn7etfcngshrqvt4"
+        class="social-icon spotify"
+        aria-label="Spotify"
+      >
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+      <a
+        href="https://github.com/thijmi"
+        class="social-icon github"
+        aria-label="GitHub"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a
+        href="https://discord.gg/cGgHwwVF57"
+        class="social-icon discord"
+        aria-label="Discord"
+      >
+        <i class="fa-brands fa-discord"></i>
+      </a>
+      <a
+        href="https://steamcommunity.com/id/girlsplsdmme/"
+        class="social-icon steam"
+        aria-label="Steam"
+      >
+        <i class="fa-brands fa-steam"></i>
+      </a>
+    </div>
+
+    <br />
+
+    <button id="show-songs-btn" class="text-button">
+      🎵 click here for some nice songs 🎵
+    </button>
+    <div id="songs-container" class="content" style="display: none;"></div>
+
+    <br />
+    <br />
+    <button id="show-components-btn" class="text-button">
+      🕛 click here for custom livesplit components 🕛
+    </button>
+    <div id="components-container" class="content" style="display: none;"></div>
   </body>
 </html>
