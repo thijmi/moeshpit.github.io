@@ -1,5 +1,0 @@
-Pace Placement - Shows which place the pace you are on is in all attempts you did in a run|https://github.com/andrewhuntsmith/LiveSplit.PacePlacement/releases
-Clock - Shows a clock inside of LiveSplit|https://drive.google.com/drive/u/2/folders/1dsGF42AYy_6vzBF1PM7gxyGI9fOTIU1U
-Theory Comparison Generator - Generates custom comparisons to run against|https://github.com/fmichea/LiveSplit.TheoryComparisonGenerator
-Discord RP - Enables Discord support for LiveSplit|https://github.com/amyy54/LiveSplit.Discord/releases
-Segmented BPT - Shows the best possible time to a specific split|https://github.com/fmichea/LiveSplit.SegmentedBPT/releases
