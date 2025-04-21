@@ -4,23 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
     <meta name="application-name" content="moe">
+    <meta name="theme-color" content="#000000">
+
     <meta property="og:type" content="article">
     <meta property="og:title" content="moe">
     <meta property="og:description" content="simple and fast website for various kinds of stuff">
     <meta property="og:image" content="https://moe.christmas/img/siro-wide.png?v=2">
     <meta property="og:url" content="https://moe.christmas/">
     <meta property="og:site_name" content="moe's web corner">
+
     <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self';
-    style-src 'self' 'unsafe-inline';
-    img-src 'self' data:;
-    font-src 'self';
-    connect-src *;
-    object-src 'none';
-    base-uri 'none';
-    form-action 'self';">
+        default-src 'self';
+        script-src 'self' https://cdnjs.cloudflare.com;
+        style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+        img-src 'self' data:;
+        font-src 'self' https://cdnjs.cloudflare.com;
+        connect-src *;
+        object-src 'none';
+        base-uri 'none';
+        form-action 'self';
+    ">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="scripts.js" defer></script>
 </head>
-test
+
+<body>
+    <p>moe's web corner</p>
+    <br>
+    <p>this website is a place where various kinds of stuff is located that could be useful</p>
+
+    <div class="wallet-grid">
+        <!-- BTC -->
+        <div class="wallet-box" data-wallet="bc1qr2ru2x43yfvfq7vvkfw9r3xwhqe5w356727sp3">
+            <div class="wallet-content">
+                <i class="fa-solid fa-copy icon"></i>
+                <div class="wallet-text">
+                    <div class="wallet-name">BTC</div>
+                    <div class="wallet-address">bc1qr2ru2x43yfvfq7vvkfw9r3xwhqe5w356727sp3</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ETH -->
+        <div class="wallet-box" data-wallet="0xab54a3613F27Ae28ea46eEEb82F9fB593633e558">
+            <div class="wallet-content">
+                <i class="fa-solid fa-copy icon"></i>
+                <div class="wallet-text">
+                    <div class="wallet-name">ETH</div>
+                    <div class="wallet-address">0xab54a3613F27Ae28ea46eEEb82F9fB593633e558</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- XMR -->
+        <div class="wallet-box" data-wallet="41rrcVc1VaB8CeD5xhc9bkUzNKE9Xz88ANC1JBBCRubPdUbjWhYzc6QWb8MeJzppTfA9rMt365z8jXUypkZq9hFkSEHTa4t">
+            <div class="wallet-content">
+                <i class="fa-solid fa-copy icon"></i>
+                <div class="wallet-text">
+                    <div class="wallet-name">XMR</div>
+                    <div class="wallet-address">41rrcVc1VaB8CeD5xhc9bkUzNKE9Xz88ANC1JBBCRubPdUbjWhYzc6QWb8MeJzppTfA9rMt365z8jXUypkZq9hFkSEHTa4t</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOL -->
+        <div class="wallet-box" data-wallet="9LctgVSzHpBwJbQ3ozXBkKWPqMdP9RTAcsXsnvqvSp85">
+            <div class="wallet-content">
+                <i class="fa-solid fa-copy icon"></i>
+                <div class="wallet-text">
+                    <div class="wallet-name">SOL</div>
+                    <div class="wallet-address">9LctgVSzHpBwJbQ3ozXBkKWPqMdP9RTAcsXsnvqvSp85</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LTC -->
+        <div class="wallet-box" data-wallet="LftBH7zb1ysGXAHJAahDfschuvVnxNevnJ">
+            <div class="wallet-content">
+                <i class="fa-solid fa-copy icon"></i>
+                <div class="wallet-text">
+                    <div class="wallet-name">LTC</div>
+                    <div class="wallet-address">LftBH7zb1ysGXAHJAahDfschuvVnxNevnJ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
