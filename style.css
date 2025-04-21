@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'font1';
+    src: url('fonts/font1.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'font1', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
