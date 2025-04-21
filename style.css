@@ -36,18 +36,21 @@ body {
 
 /* Wallet Box */
 .wallet-box {
-    background-color: #1e1e1e;
+    background-color: #1E1E1E;
     border: 1px solid #383838;
     border-radius: 1rem;
     padding: 1rem;
     width: 400px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    height: 50px;
+    
     transition: background-color 0.3s ease;
+
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 50px;
+    
+    user-select: none;
 }
 
 .wallet-box:hover {
@@ -60,19 +63,20 @@ body {
 }
 
 .wallet-box .icon {
+    color: #FFFFFF;
     font-size: 15px;
-    color: white;
     margin-top: -10px;
 }
 
 .wallet-box.copied {
-    background-color: #1e2e1e !important;
+    background-color: #1E2E1E !important;
     transition: background-color 0.3s ease;
 }
 
 .wallet-text {
     display: flex;
     flex-direction: column;
+
     margin-left: 14px;
     margin-top: -12px;
 }
@@ -82,18 +86,112 @@ body {
 }
 
 .wallet-address {
+    color: #D3D3D3;
+
     font-size: 13px;
-    color: #bbb;
+    margin-bottom: -1px;
+    max-width: 310px;
+
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: -1px;
     white-space: nowrap;
-    max-width: 310px;
 }
 
 .icon {
+    color: #FFFFFF;
+
     font-size: 1.1rem;
-    color: white;
+
     transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+input[type="text"], textarea {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin-left: -8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #1E1E1E;
+    border: 1px solid #383838;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-family: font1;
+    outline: none;
+}
+
+input[type="text"]:hover, textarea:hover {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #272727;
+    border: 1px solid #383838;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-family: font1;
+    outline: none;
+}
+
+button {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #383838;
+    font-family: font1;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #272727;
+    border: 1px solid #383838;
+}
+
+button:active {
+    background-color: #1E1E1E;
+    border: 1px solid #383838;
+}
+
+#user-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#user-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#user-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+#user-info img {
+    border-radius: 50%;
 }
