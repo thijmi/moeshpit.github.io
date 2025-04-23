@@ -14,7 +14,7 @@ body {
   color: #E9E9E9;
 
   margin: 10px;
-  line-height: 0.75;
+  line-height: 1;
 
   user-select: none;
 
@@ -22,6 +22,11 @@ body {
 
 i {
   font-size: 22px;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+i:hover {
+  text-shadow: 0 0 2px #FFFFFF;
 }
 
 a {
@@ -35,13 +40,47 @@ a:visited {
 }
 
 a:hover {
-  text-shadow: 0 0 2px #fff;
+  text-shadow: 0 0 2px #FFFFFF;
 }
 
 p:hover {
-  text-shadow: 0 0 2px #fff;
+  text-shadow: 0 0 2px #FFFFFF;
 }
 
-i:hover {
-  text-shadow: 0 0 2px #fff;
+.bluesky-icon:hover {
+  text-shadow: 0 0 15px #00A1FF, 0 0 25px #00A1FF, 0 0 35px #00A1FF;
+}
+
+.instagram-icon:hover {
+  text-shadow: 
+    0 0 10px #9b4dca,
+    0 0 15px #9b4dca,
+    0 0 20px #f56040,
+    0 0 25px #f56040,
+    0 0 30px #f7b731,
+    0 0 35px #f7b731;
+}
+
+.youtube-icon:hover {
+  text-shadow: 0 0 15px #ff0000, 0 0 25px #ff0000, 0 0 35px #ff0000;
+}
+
+.twitch-icon:hover {
+  text-shadow: 0 0 15px #e58fff, 0 0 25px #e58fff, 0 0 35px #e58fff;
+}
+
+.kick-icon:hover {
+  text-shadow: 0 0 15px #00e300, 0 0 25px #00e300, 0 0 35px #00e300;
+}
+
+.github-icon:hover {
+  text-shadow: 0 0 15px #85007a, 0 0 25px #85007a, 0 0 35px #85007a;
+}
+
+.steam-icon:hover {
+  text-shadow: 0 0 15px #00b0d0, 0 0 25px #00b0d0, 0 0 35px #00b0d0;
+}
+
+.mail-icon:hover {
+  text-shadow: 0 0 15px #bdbc7e, 0 0 25px #bdbc7e, 0 0 35px #bdbc7e;
 }
