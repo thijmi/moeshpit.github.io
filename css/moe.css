@@ -32,6 +32,7 @@ i:hover {
 a {
   color: #E9E9E9;
   text-decoration: none;
+  transition: text-shadow 0.3s ease-in-out;
 }
 
 a:visited {
