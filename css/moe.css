@@ -85,3 +85,7 @@ p:hover {
 .mail-icon:hover {
   text-shadow: 0 0 15px #bdbc7e, 0 0 25px #bdbc7e, 0 0 35px #bdbc7e;
 }
+
+.mastodon-icon:hover {
+  text-shadow: 0 0 15px #9e8af8, 0 0 25px #9e8af8, 0 0 35px #9e8af8;
+}
